@@ -13,6 +13,14 @@
 		1018E32824B0A446007639DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1018E32624B0A446007639DE /* Main.storyboard */; };
 		1018E32A24B0A449007639DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1018E32924B0A449007639DE /* Assets.xcassets */; };
 		1018E32D24B0A449007639DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1018E32B24B0A449007639DE /* LaunchScreen.storyboard */; };
+		1018E34E24B0BEBE007639DE /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E34B24B0BEBE007639DE /* URLSession+Extension.swift */; };
+		1018E34F24B0BEBE007639DE /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E34C24B0BEBE007639DE /* URLRequest+Extension.swift */; };
+		1018E35024B0BEBE007639DE /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E34D24B0BEBE007639DE /* URLComponents+Extension.swift */; };
+		1018E35424B0BEC9007639DE /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35224B0BEC9007639DE /* NetworkProvider.swift */; };
+		1018E35524B0BEC9007639DE /* NetworkProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35324B0BEC9007639DE /* NetworkProviderImpl.swift */; };
+		1018E35B24B0BECF007639DE /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35724B0BECF007639DE /* SpotifyService.swift */; };
+		1018E35C24B0BECF007639DE /* SpotifyServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35824B0BECF007639DE /* SpotifyServiceImpl.swift */; };
+		1018E35D24B0BECF007639DE /* MusicAPIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35A24B0BECF007639DE /* MusicAPIFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		1018E32924B0A449007639DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1018E32C24B0A449007639DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1018E32E24B0A449007639DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1018E34B24B0BEBE007639DE /* URLSession+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		1018E34C24B0BEBE007639DE /* URLRequest+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		1018E34D24B0BEBE007639DE /* URLComponents+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
+		1018E35224B0BEC9007639DE /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		1018E35324B0BEC9007639DE /* NetworkProviderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderImpl.swift; sourceTree = "<group>"; };
+		1018E35724B0BECF007639DE /* SpotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		1018E35824B0BECF007639DE /* SpotifyServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyServiceImpl.swift; sourceTree = "<group>"; };
+		1018E35A24B0BECF007639DE /* MusicAPIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicAPIFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		1018E31F24B0A446007639DE /* MoshiTest */ = {
 			isa = PBXGroup;
 			children = (
+				1018E35624B0BECF007639DE /* Source */,
+				1018E35124B0BEC9007639DE /* NetworkProvider */,
+				1018E34A24B0BEBE007639DE /* Extensions */,
 				1018E32024B0A446007639DE /* AppDelegate.swift */,
 				1018E32224B0A446007639DE /* SceneDelegate.swift */,
 				1018E32424B0A446007639DE /* ViewController.swift */,
@@ -65,6 +84,43 @@
 				1018E32E24B0A449007639DE /* Info.plist */,
 			);
 			path = MoshiTest;
+			sourceTree = "<group>";
+		};
+		1018E34A24B0BEBE007639DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1018E34B24B0BEBE007639DE /* URLSession+Extension.swift */,
+				1018E34C24B0BEBE007639DE /* URLRequest+Extension.swift */,
+				1018E34D24B0BEBE007639DE /* URLComponents+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1018E35124B0BEC9007639DE /* NetworkProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1018E35224B0BEC9007639DE /* NetworkProvider.swift */,
+				1018E35324B0BEC9007639DE /* NetworkProviderImpl.swift */,
+			);
+			path = NetworkProvider;
+			sourceTree = "<group>";
+		};
+		1018E35624B0BECF007639DE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1018E35724B0BECF007639DE /* SpotifyService.swift */,
+				1018E35824B0BECF007639DE /* SpotifyServiceImpl.swift */,
+				1018E35924B0BECF007639DE /* Factory */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1018E35924B0BECF007639DE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1018E35A24B0BECF007639DE /* MusicAPIFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1018E35424B0BEC9007639DE /* NetworkProvider.swift in Sources */,
+				1018E34F24B0BEBE007639DE /* URLRequest+Extension.swift in Sources */,
+				1018E35024B0BEBE007639DE /* URLComponents+Extension.swift in Sources */,
+				1018E35D24B0BECF007639DE /* MusicAPIFactory.swift in Sources */,
+				1018E35524B0BEC9007639DE /* NetworkProviderImpl.swift in Sources */,
+				1018E34E24B0BEBE007639DE /* URLSession+Extension.swift in Sources */,
 				1018E32524B0A446007639DE /* ViewController.swift in Sources */,
+				1018E35C24B0BECF007639DE /* SpotifyServiceImpl.swift in Sources */,
 				1018E32124B0A446007639DE /* AppDelegate.swift in Sources */,
+				1018E35B24B0BECF007639DE /* SpotifyService.swift in Sources */,
 				1018E32324B0A446007639DE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
