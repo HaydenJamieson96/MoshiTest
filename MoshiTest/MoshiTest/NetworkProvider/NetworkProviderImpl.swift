@@ -17,6 +17,52 @@ class NetworkProviderImpl: NetworkProvider {
         self.session = session
     }
     
+     func requestWithComponents<T: Decodable>(url: String,
+                                                 method: HTTPMethod = .get,
+                                                 headers: [String: String]? = nil,
+                                                 body: URLComponents? = nil,
+                                                 queryParameters: [String: String]?,
+                                                 type: T.Type,
+                                                 completion: @escaping (NetworkResponse<T>) -> Void) {
+            
+            var urlcomponents = URLComponents(string: url)
+            
+            urlcomponents?.addQueryParams(queryParameters)
+            
+            guard let finalUrl = urlcomponents?.url else { return }
+            
+            var request = URLRequest(url: finalUrl)
+            
+            print("Sending \(method.rawValue) request to \(finalUrl.absoluteString)")
+            
+            request.setHTTPMethod(method)
+            
+            let allHeaders = headers ?? [:]
+            
+            request.setHeaders(allHeaders)
+            
+            print("with headers of: \(String(describing: allHeaders))")
+            
+            if let body = body,
+                method != HTTPMethod.get {
+                
+                request.httpBody = body.query?.data(using: .utf8)
+                
+                if let bodyDate = request.httpBody {
+                    
+                    print("with body of: \(String(data: bodyDate, encoding: .utf8) ?? "")")
+                }
+                
+            }
+            
+            let dataRequest = self.session.dataRequest(with: request) { [weak self] (data, response, error) in
+                
+                self?.handle(with: response, and: error, for: data, type: type, completion: completion)
+            }
+            
+            dataRequest.resume()
+        }
+    
     func request<T: Decodable, R: Encodable>(url: String,
                                              method: HTTPMethod = .get,
                                              headers: [String: String]? = nil,
@@ -40,11 +86,11 @@ class NetworkProviderImpl: NetworkProvider {
         var allHeaders: [String: String] = headers ?? [:]
         
         if T.self != String.self {
-            
+
             if allHeaders["Accept"] == nil {
                 allHeaders["Accept"] = "application/json"
             }
-            
+
             if allHeaders["Content-Type"] == nil {
                 allHeaders["Content-Type"] = "application/json"
             }
@@ -89,6 +135,8 @@ class NetworkProviderImpl: NetworkProvider {
             case 200...299:
                 
                 if let data = data {
+                    
+                    print(data)
                     
                     if T.self == String.self {
                         

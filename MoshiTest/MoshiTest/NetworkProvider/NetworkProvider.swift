@@ -52,6 +52,14 @@ protocol NetworkProvider {
                                              queryParameters: [String: String]?,
                                              type: T.Type,
                                              completion: @escaping (NetworkResponse<T>) -> Void)
+    
+    func requestWithComponents<T: Decodable>(url: String,
+                                                    method: HTTPMethod,
+                                                    headers: [String: String]?,
+                                                    body: URLComponents?,
+                                                    queryParameters: [String: String]?,
+                                                    type: T.Type,
+                                                    completion: @escaping (NetworkResponse<T>) -> Void)
 }
 
 protocol URLSessionProtocol {

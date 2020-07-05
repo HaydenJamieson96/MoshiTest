@@ -13,6 +13,5 @@ extension URLSession: URLSessionProtocol {
     @objc func dataRequest(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         
         return self.dataTask(with: request, completionHandler: completionHandler)
-        
     }
 }

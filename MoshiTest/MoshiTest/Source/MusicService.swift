@@ -1,5 +1,5 @@
 //
-//  SpotifyService.swift
+//  MusicService.swift
 //  MoshiTest
 //
 //  Created by Hayden Jamieson on 04/07/2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SpotifyService {
+protocol MusicService {
     
-    func getNewAlbumReleases()
+    func getNewAlbumReleases(_ completion: @escaping (_ albums: Albums?) -> Void)
 }

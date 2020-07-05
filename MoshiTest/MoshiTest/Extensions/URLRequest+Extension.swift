@@ -23,6 +23,5 @@ extension URLRequest {
     mutating func setBody<T: Encodable>(_ body: T) {
         
         self.httpBody = try? JSONEncoder().encode(body)
-        
     }
 }
