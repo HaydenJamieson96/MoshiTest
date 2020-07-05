@@ -10,15 +10,17 @@ import Foundation
 
 class MasterViewModel {
     
-    var albums: Albums?
-    
-    func getLatestAlbumReleases() {
+    func getLatestAlbumReleases(_ completion: @escaping (_ albums: [Item]?) -> Void) {
         
-        ServiceFactory.shared().spotifyService?.getNewAlbumReleases { [weak self] (albums) in
+        ServiceFactory.shared().spotifyService?.getNewAlbumReleases { (albums) in
             
             if let safeAlbums = albums {
                 
-                self?.albums = safeAlbums
+                completion(safeAlbums.items)
+                
+            } else {
+                
+                completion([])
             }
         }
     }
