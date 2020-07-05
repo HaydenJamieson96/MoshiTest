@@ -9,21 +9,45 @@
 /* Begin PBXBuildFile section */
 		1018E32124B0A446007639DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E32024B0A446007639DE /* AppDelegate.swift */; };
 		1018E32324B0A446007639DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E32224B0A446007639DE /* SceneDelegate.swift */; };
-		1018E32524B0A446007639DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E32424B0A446007639DE /* ViewController.swift */; };
-		1018E32824B0A446007639DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1018E32624B0A446007639DE /* Main.storyboard */; };
 		1018E32A24B0A449007639DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1018E32924B0A449007639DE /* Assets.xcassets */; };
 		1018E32D24B0A449007639DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1018E32B24B0A449007639DE /* LaunchScreen.storyboard */; };
+		1018E34E24B0BEBE007639DE /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E34B24B0BEBE007639DE /* URLSession+Extension.swift */; };
+		1018E34F24B0BEBE007639DE /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E34C24B0BEBE007639DE /* URLRequest+Extension.swift */; };
+		1018E35024B0BEBE007639DE /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E34D24B0BEBE007639DE /* URLComponents+Extension.swift */; };
+		1018E35424B0BEC9007639DE /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35224B0BEC9007639DE /* NetworkProvider.swift */; };
+		1018E35524B0BEC9007639DE /* NetworkProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35324B0BEC9007639DE /* NetworkProviderImpl.swift */; };
+		1018E35B24B0BECF007639DE /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35724B0BECF007639DE /* MusicService.swift */; };
+		1018E35C24B0BECF007639DE /* SpotifyServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35824B0BECF007639DE /* SpotifyServiceImpl.swift */; };
+		1018E35D24B0BECF007639DE /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35A24B0BECF007639DE /* ServiceFactory.swift */; };
+		1018E36024B0EF55007639DE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1018E35F24B0EF55007639DE /* Album.swift */; };
+		105894CF24B1E01E00291E3B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105894CE24B1E01E00291E3B /* MasterViewController.swift */; };
+		105894D124B1E03A00291E3B /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105894D024B1E03A00291E3B /* MasterViewModel.swift */; };
+		105894D324B1E06F00291E3B /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105894D224B1E06F00291E3B /* MasterViewController.xib */; };
+		105894D624B1EA2700291E3B /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105894D524B1EA2700291E3B /* AlbumCell.xib */; };
+		105894D824B1EBFA00291E3B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105894D724B1EBFA00291E3B /* AlbumCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1018E31D24B0A446007639DE /* MoshiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoshiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1018E32024B0A446007639DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1018E32224B0A446007639DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1018E32424B0A446007639DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1018E32724B0A446007639DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1018E32924B0A449007639DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1018E32C24B0A449007639DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1018E32E24B0A449007639DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1018E34B24B0BEBE007639DE /* URLSession+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		1018E34C24B0BEBE007639DE /* URLRequest+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		1018E34D24B0BEBE007639DE /* URLComponents+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
+		1018E35224B0BEC9007639DE /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		1018E35324B0BEC9007639DE /* NetworkProviderImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderImpl.swift; sourceTree = "<group>"; };
+		1018E35724B0BECF007639DE /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		1018E35824B0BECF007639DE /* SpotifyServiceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyServiceImpl.swift; sourceTree = "<group>"; };
+		1018E35A24B0BECF007639DE /* ServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		1018E35F24B0EF55007639DE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		105894CE24B1E01E00291E3B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		105894D024B1E03A00291E3B /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
+		105894D224B1E06F00291E3B /* MasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		105894D524B1EA2700291E3B /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		105894D724B1EBFA00291E3B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,83 @@
 		1018E31F24B0A446007639DE /* MoshiTest */ = {
 			isa = PBXGroup;
 			children = (
+				1018E35E24B0EF22007639DE /* Model */,
+				1018E35624B0BECF007639DE /* Source */,
+				1018E35124B0BEC9007639DE /* NetworkProvider */,
+				1018E34A24B0BEBE007639DE /* Extensions */,
 				1018E32024B0A446007639DE /* AppDelegate.swift */,
 				1018E32224B0A446007639DE /* SceneDelegate.swift */,
-				1018E32424B0A446007639DE /* ViewController.swift */,
-				1018E32624B0A446007639DE /* Main.storyboard */,
 				1018E32924B0A449007639DE /* Assets.xcassets */,
 				1018E32B24B0A449007639DE /* LaunchScreen.storyboard */,
 				1018E32E24B0A449007639DE /* Info.plist */,
 			);
 			path = MoshiTest;
+			sourceTree = "<group>";
+		};
+		1018E34A24B0BEBE007639DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1018E34B24B0BEBE007639DE /* URLSession+Extension.swift */,
+				1018E34C24B0BEBE007639DE /* URLRequest+Extension.swift */,
+				1018E34D24B0BEBE007639DE /* URLComponents+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1018E35124B0BEC9007639DE /* NetworkProvider */ = {
+			isa = PBXGroup;
+			children = (
+				1018E35224B0BEC9007639DE /* NetworkProvider.swift */,
+				1018E35324B0BEC9007639DE /* NetworkProviderImpl.swift */,
+			);
+			path = NetworkProvider;
+			sourceTree = "<group>";
+		};
+		1018E35624B0BECF007639DE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				105894D424B1E9EE00291E3B /* Cells */,
+				105894CD24B1DF5D00291E3B /* Screens */,
+				1018E35724B0BECF007639DE /* MusicService.swift */,
+				1018E35824B0BECF007639DE /* SpotifyServiceImpl.swift */,
+				1018E35924B0BECF007639DE /* Factory */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1018E35924B0BECF007639DE /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1018E35A24B0BECF007639DE /* ServiceFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		1018E35E24B0EF22007639DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1018E35F24B0EF55007639DE /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		105894CD24B1DF5D00291E3B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				105894CE24B1E01E00291E3B /* MasterViewController.swift */,
+				105894D024B1E03A00291E3B /* MasterViewModel.swift */,
+				105894D224B1E06F00291E3B /* MasterViewController.xib */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		105894D424B1E9EE00291E3B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				105894D524B1EA2700291E3B /* AlbumCell.xib */,
+				105894D724B1EBFA00291E3B /* AlbumCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105894D324B1E06F00291E3B /* MasterViewController.xib in Resources */,
 				1018E32D24B0A449007639DE /* LaunchScreen.storyboard in Resources */,
 				1018E32A24B0A449007639DE /* Assets.xcassets in Resources */,
-				1018E32824B0A446007639DE /* Main.storyboard in Resources */,
+				105894D624B1EA2700291E3B /* AlbumCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +231,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1018E32524B0A446007639DE /* ViewController.swift in Sources */,
+				105894D124B1E03A00291E3B /* MasterViewModel.swift in Sources */,
+				1018E35424B0BEC9007639DE /* NetworkProvider.swift in Sources */,
+				1018E34F24B0BEBE007639DE /* URLRequest+Extension.swift in Sources */,
+				105894D824B1EBFA00291E3B /* AlbumCell.swift in Sources */,
+				1018E35024B0BEBE007639DE /* URLComponents+Extension.swift in Sources */,
+				1018E35D24B0BECF007639DE /* ServiceFactory.swift in Sources */,
+				1018E35524B0BEC9007639DE /* NetworkProviderImpl.swift in Sources */,
+				1018E34E24B0BEBE007639DE /* URLSession+Extension.swift in Sources */,
+				1018E35C24B0BECF007639DE /* SpotifyServiceImpl.swift in Sources */,
 				1018E32124B0A446007639DE /* AppDelegate.swift in Sources */,
+				1018E35B24B0BECF007639DE /* MusicService.swift in Sources */,
 				1018E32324B0A446007639DE /* SceneDelegate.swift in Sources */,
+				1018E36024B0EF55007639DE /* Album.swift in Sources */,
+				105894CF24B1E01E00291E3B /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1018E32624B0A446007639DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1018E32724B0A446007639DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1018E32B24B0A449007639DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HaydenJamieson.MoshiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HaydenJamieson.MoshiTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
