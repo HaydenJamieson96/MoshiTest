@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class AlbumCell: UICollectionViewCell {
     
@@ -23,9 +24,22 @@ class AlbumCell: UICollectionViewCell {
     func configure(with album: Item) {
         
         self.album = album
+        
+        albumImage.sd_imageTransition = .fade
+        
+        let imageUrl = URL(string: album.images.first?.url ?? "")
+        
+        albumImage.sd_setImage(with: imageUrl,
+                               placeholderImage: nil,
+                               options: SDWebImageOptions(arrayLiteral: .forceTransition))
+        
+        albumNameLbl.text = album.name
+        
+        aldbumReleaseDateLbl.text = album.releaseDate
     }
     
     @IBAction func didTapShareBtn(_ sender: Any) {
     
+        
     }
 }

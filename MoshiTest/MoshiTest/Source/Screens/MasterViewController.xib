@@ -9,23 +9,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MasterViewController" customModule="MoshiTest" customModuleProvider="target">
             <connections>
+                <outlet property="albumCollectionView" destination="WDT-ej-ush" id="TfH-QT-KlE"/>
                 <outlet property="view" destination="MgX-Ng-p7U" id="at1-Kp-YJb"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="MgX-Ng-p7U">
+        <view contentMode="scaleToFill" id="MgX-Ng-p7U">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMh-FR-Vd1">
-                    <rect key="frame" x="180.5" y="437.5" width="53" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WDT-ej-ush">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mbm-8E-NBo">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,11 +32,9 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="xg5-t5-tvp" firstAttribute="trailing" secondItem="WDT-ej-ush" secondAttribute="trailing" id="1mB-vc-wGk"/>
-                <constraint firstItem="SMh-FR-Vd1" firstAttribute="centerY" secondItem="MgX-Ng-p7U" secondAttribute="centerY" id="2mK-wf-9dT"/>
                 <constraint firstItem="WDT-ej-ush" firstAttribute="leading" secondItem="xg5-t5-tvp" secondAttribute="leading" id="knL-Kj-IUk"/>
                 <constraint firstItem="xg5-t5-tvp" firstAttribute="bottom" secondItem="WDT-ej-ush" secondAttribute="bottom" id="tAk-tf-cjh"/>
                 <constraint firstItem="WDT-ej-ush" firstAttribute="top" secondItem="xg5-t5-tvp" secondAttribute="top" id="vFB-If-a4e"/>
-                <constraint firstItem="SMh-FR-Vd1" firstAttribute="centerX" secondItem="MgX-Ng-p7U" secondAttribute="centerX" id="zql-xF-kuv"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="xg5-t5-tvp"/>
