@@ -9,6 +9,11 @@
 import UIKit
 import SDWebImage
 
+protocol ShareDelegate: NSObjectProtocol {
+    
+    func didTapShare(with url: URL)
+}
+
 class AlbumCell: UICollectionViewCell {
     
     @IBOutlet weak var albumImage: UIImageView!
@@ -20,6 +25,8 @@ class AlbumCell: UICollectionViewCell {
     @IBOutlet weak var shareBtn: UIButton!
     
     private var album: Item?
+    
+    weak var delegate: ShareDelegate?
     
     func configure(with album: Item) {
         
@@ -39,7 +46,9 @@ class AlbumCell: UICollectionViewCell {
     }
     
     @IBAction func didTapShareBtn(_ sender: Any) {
-    
         
+        guard let safeAlbum = album, let hrefUrl = URL(string: safeAlbum.href) else { return }
+        
+        delegate?.didTapShare(with: hrefUrl)
     }
 }
