@@ -25,6 +25,7 @@
 		105894D324B1E06F00291E3B /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105894D224B1E06F00291E3B /* MasterViewController.xib */; };
 		105894D624B1EA2700291E3B /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105894D524B1EA2700291E3B /* AlbumCell.xib */; };
 		105894D824B1EBFA00291E3B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105894D724B1EBFA00291E3B /* AlbumCell.swift */; };
+		10944BA424B332C3001E4CB2 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10944BA324B332C3001E4CB2 /* keys.plist */; };
 		10D284C524B2031300CE232A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D284C424B2031300CE232A /* DetailViewController.swift */; };
 		10D284C724B2031D00CE232A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10D284C624B2031D00CE232A /* DetailViewController.xib */; };
 		10D96F8424B1F70900DF65E4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 10D96F8324B1F70900DF65E4 /* SDWebImage */; };
@@ -51,6 +52,7 @@
 		105894D224B1E06F00291E3B /* MasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 		105894D524B1EA2700291E3B /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
 		105894D724B1EBFA00291E3B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		10944BA324B332C3001E4CB2 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		10D284C424B2031300CE232A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		10D284C624B2031D00CE232A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +97,7 @@
 				1018E32924B0A449007639DE /* Assets.xcassets */,
 				1018E32B24B0A449007639DE /* LaunchScreen.storyboard */,
 				1018E32E24B0A449007639DE /* Info.plist */,
-				10944BA124B32FC3001E4CB2 /* keys.plist */,
+				10944BA324B332C3001E4CB2 /* keys.plist */,
 			);
 			path = MoshiTest;
 			sourceTree = "<group>";
@@ -232,9 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10944BA224B32FC3001E4CB2 /* keys.plist in Resources */,
 				105894D324B1E06F00291E3B /* MasterViewController.xib in Resources */,
 				1018E32D24B0A449007639DE /* LaunchScreen.storyboard in Resources */,
+				10944BA424B332C3001E4CB2 /* keys.plist in Resources */,
 				10D284C724B2031D00CE232A /* DetailViewController.xib in Resources */,
 				1018E32A24B0A449007639DE /* Assets.xcassets in Resources */,
 				105894D624B1EA2700291E3B /* AlbumCell.xib in Resources */,
