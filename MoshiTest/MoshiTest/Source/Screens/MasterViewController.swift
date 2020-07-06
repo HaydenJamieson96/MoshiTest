@@ -70,6 +70,8 @@ extension MasterViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         cell.configure(with: albums[indexPath.row])
         
+        cell.delegate = self
+        
         return cell
     }
     
@@ -88,6 +90,24 @@ extension MasterViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         let item = albums[indexPath.row]
         
+        let detailScreen = DetailViewController()
         
+        detailScreen.album = item
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+        navigationController?.pushViewController(detailScreen, animated: true)
+    }
+}
+
+extension MasterViewController: ShareDelegate {
+    
+    func didTapShare(with url: URL) {
+        
+        let items = [url]
+        
+        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        navigationController?.present(ac, animated: true)
     }
 }
