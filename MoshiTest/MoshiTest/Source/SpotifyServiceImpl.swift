@@ -48,9 +48,17 @@ class SpotifyServiceImpl: MusicService {
         
         let url = "https://accounts.spotify.com/api/token"
         
-        let clientId = "0c17bd400a1d40f9a7c110b2124de974"
+        var clientId = ""
         
-        let clientSecret = "4d1c1eac43fe4337b417b6ae8e8a4d55"
+        var clientSecret = ""
+        
+        if let path = Bundle.main.path(forResource: "keys", ofType: "plist"),
+            let dict = NSDictionary(contentsOfFile: path) as? [String: AnyObject] {
+                
+            clientId = dict["clientId"] as? String ?? ""
+            
+            clientSecret = dict["clientSecret"] as? String ?? ""
+        }
         
         let encoded = "Basic \((clientId + ":" + clientSecret).data(using: .utf8)!.base64EncodedString())"
         
